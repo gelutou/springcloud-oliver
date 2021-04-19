@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="provider.dao.DeptDao">
 
-    <insert id="add" parameterType="Dept">
+    <insert id="add" parameterType="api.pojo.Dept">
         INSERT INTO springcloud_01.dept(DEPT_NAME, DB_SOURCE) VALUES (#{deptName},database());
     </insert>
 

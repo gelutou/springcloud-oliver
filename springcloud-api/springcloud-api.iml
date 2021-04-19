@@ -11,8 +11,14 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes"/>  
     <content> 
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false"/>
       <excludeFolder url="file://$MODULE_DIR$/target"/>
-    </content> 
+    </content>  
+    <orderEntry type="module-library"> 
+      <library> 
+        <CLASSES>
+          <root url="jar://D:/apache-maven-3.6.3/repository/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar!/"/>
+        </CLASSES>
+      </library> 
+    </orderEntry> 
   </component> 
 </module>

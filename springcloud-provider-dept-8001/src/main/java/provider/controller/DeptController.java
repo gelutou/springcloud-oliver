@@ -22,7 +22,7 @@ public class DeptController {
     DeptService deptService;
 
     @PostMapping(value = "/add")
-    public boolean add(Dept dept){
+    public boolean add(@RequestBody Dept dept){
         return deptService.add(dept);
     }
 
@@ -31,7 +31,7 @@ public class DeptController {
         return deptService.queryById(deptNo);
     }
 
-    @PostMapping(value = "/list")
+    @GetMapping(value = "/list")
     public List<Dept> queryAll(){
         return deptService.queryAll();
     }
